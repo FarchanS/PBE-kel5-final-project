@@ -4,13 +4,10 @@ while True:
         break
     except:
         print("MASUKKAN ANGKA")
-while True:
-    try:
-        operator = input("operator = ")
-        if operator !="+" or operator !="-" or operator !="x" or operator !="/":
-            break
-    except:
-        print("masukkan operator")
+operator = input("operator(+,-,x,/)= ")
+while operator !='+' and operator !='-' and operator !='x' and operator !='/':
+    print("masukkan operator bro")
+    operator = input("operator = ")
 while True:
     try:
         b = float(input("masukkan angka ke2 = "))
